@@ -1,0 +1,49 @@
+{
+  "name": "webpack-cfg",
+  "version": "0.0.9",
+  "description": "Basic configuration of the webpack tool.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --config build-utils/webpack.config.js --env env=dev",
+    "build": "webpack --config build-utils/webpack.config.js --env env=prod",
+    "build:analyze": "npm run build -- --env addon=bundleanalyze",
+    "ver:major": "npm version major",
+    "ver:minor": "npm version minor",
+    "ver:patch": "npm version patch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@gitlab.it-notes.cz:5578/js-notes/webpack.git"
+  },
+  "keywords": [
+    "configuration",
+    "webpack"
+  ],
+  "author": "Maotouying69",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.2",
+    "eslint": "^7.20.0",
+    "eslint-loader": "^4.0.2",
+    "html-webpack-plugin": "^5.1.0",
+    "node-sass": "^5.0.0",
+    "postcss-loader": "^5.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.22.0",
+    "webpack-bundle-analyzer": "^4.4.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/plugin-proposal-class-properties": "^7.12.13",
+    "@babel/preset-env": "^7.12.16",
+    "babel-loader": "^8.2.2"
+  }
+}
